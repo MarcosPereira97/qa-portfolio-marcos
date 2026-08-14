@@ -1,44 +1,44 @@
-Estrategia de Testes -- SauceDemo (Greenn Challenge)
+Estratégia de Testes -- SauceDemo (Greenn Challenge)
 =====================================================
 
 ## Contexto
 
-Aplicacao de e-commerce de referencia (SauceDemo) usada em desafio tecnico. Fluxo de negocio: login, navegacao/catalogo, carrinho e checkout -- o funil de compra, onde qualquer falha tem impacto direto em receita.
+Aplicação de e-commerce de referência (SauceDemo) usada em desafio técnico. Fluxo de negócio: login, navegação/catálogo, carrinho e checkout -- o funil de compra, onde qualquer falha tem impacto direto em receita.
 
-## Objetivo da estrategia
+## Objetivo da estratégia
 
-Garantir que o fluxo critico de compra funcione ponta a ponta, priorizando cenarios de maior risco de negocio em vez de cobertura exaustiva de UI.
+Garantir que o fluxo crítico de compra funcione ponta a ponta, priorizando cenários de maior risco de negócio em vez de cobertura exaustiva de UI.
 
-## Analise de risco
+## Análise de risco
 
-| Area | Risco de negocio | Prioridade de teste |
+| Área | Risco de negócio | Prioridade de teste |
 |---|---|---|
 | Login | Bloqueia acesso total ao sistema | Alta |
-| Catalogo/Homepage | Impacta descoberta de produto | Media |
+| Catálogo/Homepage | Impacta descoberta de produto | Média |
 | Carrinho | Erros geram compra incorreta | Alta |
-| Checkout | Erro = perda direta de venda | Critica |
+| Checkout | Erro = perda direta de venda | Crítica |
 
 ## Tipos de teste aplicados
 
-- E2E automatizado (Cypress): cobre os 4 fluxos acima, com foco nos caminhos felizes e principais caminhos de erro (credenciais invalidas, campos obrigatorios, carrinho vazio).
-- Dados de teste: centralizados em fixtures JSON, evitando hardcode e facilitando manutencao.
-- Comandos customizados: reuso de login via cy.session(), reduzindo tempo de execucao e duplicacao.
-- Evidencias: relatorios Allure com screenshots automaticos em falhas e historico de execucao.
+- E2E automatizado (Cypress): cobre os 4 fluxos acima, com foco nos caminhos felizes e principais caminhos de erro (credenciais inválidas, campos obrigatórios, carrinho vazio).
+- Dados de teste: centralizados em fixtures JSON, evitando hardcode e facilitando manutenção.
+- Comandos customizados: reuso de login via cy.session(), reduzindo tempo de execução e duplicação.
+- Evidências: relatórios Allure com screenshots automáticos em falhas e histórico de execução.
 
 ## Cobertura atual
 
-- Autenticacao: 4 casos (login valido/invalido, campos obrigatorios)
-- Homepage: 6 casos (navegacao, produtos, ordenacao)
-- Checkout: 10 casos (fluxo completo, validacoes)
+- Autenticação: 4 casos (login válido/inválido, campos obrigatórios)
+- Homepage: 6 casos (navegação, produtos, ordenação)
+- Checkout: 10 casos (fluxo completo, validações)
 - Total: 20 casos automatizados
 
 ## Fora de escopo (documentado propositalmente)
 
-- Testes de performance/carga (nao fazem parte deste desafio)
+- Testes de performance/carga (não fazem parte deste desafio)
 - Testes de acessibilidade
-- Testes cross-browser alem de Chrome/Electron (limitacao conhecida)
+- Testes cross-browser além de Chrome/Electron (limitação conhecida)
 
-## Criterios de saida
+## Critérios de saída
 
-- 100% dos cenarios criticos (checkout) passando antes de considerar a suite pronta para CI
-- Zero flakiness tolerada em cenarios de autenticacao
+- 100% dos cenários críticos (checkout) passando antes de considerar a suíte pronta para CI
+- Zero flakiness tolerada em cenários de autenticação
