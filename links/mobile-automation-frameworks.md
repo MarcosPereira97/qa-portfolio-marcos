@@ -1,18 +1,18 @@
-Frameworks de Automacao Mobile
+Frameworks de Automação Mobile
 =================================
 
 ## Appium + Ruby + Cucumber
 
-- Uso: automacao de testes E2E para aplicativos Android nativos, com cenarios escritos em BDD (Gherkin).
-- Projeto de referencia: [qa.neon-mobile-test.appium](https://github.com/MarcosPereira97/qa.neon-mobile-test.appium).
-- Pontos fortes na minha experiencia: configuracao de capabilities de dispositivo/emulador, localizacao de elementos nativos, integracao com Cucumber para cenarios de negocio.
+- Uso: automação de testes E2E para aplicativos Android nativos, com cenários escritos em BDD (Gherkin).
+- Projeto de referência: [qa.neon-mobile-test.appium](https://github.com/MarcosPereira97/qa.neon-mobile-test.appium).
+- Pontos fortes na minha experiência: configuração de capabilities de dispositivo/emulador, localização de elementos nativos, integração com Cucumber para cenários de negócio.
 
-## Em construcao: Appium / Mobilewright / Taqwright
+## Em construção: Appium / Mobilewright / Taqwright
 
-- Contexto: novo ciclo de estudo usando um app de referencia mais moderno ([Taqwright demo app](https://github.com/Taqwright/taqwright-demo/tree/main/app)) para evoluir a stack mobile.
-- Objetivo: comparar abordagens entre Appium tradicional e ferramentas mais recentes como Mobilewright e Taqwright, avaliando produtividade, estabilidade e velocidade de execucao.
+- Contexto: novo ciclo de estudo usando um app de referência mais moderno ([Taqwright demo app](https://github.com/Taqwright/taqwright-demo/tree/main/app)) para evoluir a stack mobile.
+- Objetivo: comparar abordagens entre Appium tradicional e ferramentas mais recentes como Mobilewright e Taqwright, avaliando produtividade, estabilidade e velocidade de execução.
 - Status: planejado no roadmap (ver [roadmap.md](../roadmap.md)).
 
-## Observacao geral
+## Observação geral
 
-Em automacao mobile, priorizo: estabilidade de localizadores (evitar XPath fragil), isolamento de dados de teste por execucao, e cobertura de cenarios de rede instavel/interrupcoes, que sao riscos comuns e pouco testados em apps moveis.
+Em automação mobile, priorizo: estabilidade de localizadores (evitar XPath frágil), isolamento de dados de teste por execução, e cobertura de cenários de rede instável/interrupções, que são riscos comuns e pouco testados em apps móveis.
