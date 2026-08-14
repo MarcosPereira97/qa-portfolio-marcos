@@ -13,13 +13,13 @@ Proximos passos planejados para evolucao deste portfolio e dos projetos vitrine,
 
 ## Curto prazo
 
-- Adicionar device-matrix.md documentando cobertura de dispositivos/OS testados.
 - Expandir exemplos de bug reports com casos reais de API.
 
 ## Medio prazo
 
 - Construir novo projeto de automacao mobile usando o app de referencia do [Taqwright](https://github.com/Taqwright/taqwright-demo/tree/main/app), comparando Appium tradicional com Mobilewright e Taqwright.
 - Publicar relatorios de execucao (Allure/TestDino) via GitHub Pages para os projetos vitrine.
+- Criar device-matrix.md documentando cobertura de dispositivos/OS testados (quando houver mais projetos mobile no portfolio).
 
 ## Longo prazo
 
